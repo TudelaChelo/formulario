@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Inscripción Curso</title>
+</head>
+<body>
+
+    <form>
+        <h1>Formulario de Inscripción Curso</h1>
+        <p>Rellene cuidadosamente el formulario de inscripción</p>
+
+
+        <fieldset>
+            <legend>Nombre del alumno</legend>
+            <input type="text" size="25" maxlength="30" placeholder="Nombre">
+            <input type="text" size="25" maxlength="30" placeholder="Segundo Nombre">
+            <input type="text" size="25" maxlength="30" placeholder="Apellido">
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+
+            <label for="genero">Género</label><br>
+            <select id="genero" name="genero">
+                <option value=""></option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+        <br>
+
+
+
+
+        <fieldset>
+            <legend>Dirección</legend>
+            <input type="text" size="80" maxlength="100" placeholder="Dirección de la calle"><br><br>
+            <input type="text" size="80" maxlength="100" placeholder="Dirección de la calle Línea 2"><br><br>
+            <label for="ciudad">Ciudad</label><br>
+            <select id="cid" name="ciudad">
+                <option value=""></option>
+                <option value="ORURO">ORURO</option>
+                <option value="LA PAZ">LA PAZ</option>
+                <option value="POTOSI">POTOSI</option>
+                <option value="COCHABAMBA">COCHABAMBA</option>
+                <option value="SANTA CRUZ">SANTA CRUZ</option>
+                <option value="CHUQUISACA">CHIQUISACA</option>
+                <option value="BENI">BENI</option>
+                <option value="PANDO">PANDO</option>
+            </select>
+            <input type="text" size="35" maxlength="40" placeholder="Estado / Provincia"><br><br>
+            
+            <input type="text" size="30" maxlength="20" placeholder="Código Postal">
+        </fieldset>
+        <br>
+
+
+
+
+
+        <fieldset>
+            <legend>Contacto</legend>
+            <label for="email">Email</label><br>
+            <input type="email" size="40" id="email" name="email"><br><br>
+
+            <label for="telefono">Número de teléfono</label><br>
+            <input type="tel" size="30" id="telefono" name="telefono">
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>Ha recibido otros cursos Anteriormente</legend>
+            <input type="radio" id="si" name="cursos_anteriores" value="si">
+            <label for="si">Sí</label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" id="no" name="cursos_anteriores" value="no">
+            <label for="no">No</label>
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>Información adicional del curso</legend>
+            <label for="empresa">Empresa</label><br>
+            <input type="text" size="40" id="empresa" name="empresa"><br><br>
+
+            <label for="cursos">Cursos</label><br>
+            <select id="cursos" name="cursos">
+                <option value=""></option>
+                <option value="LATEX">LATEX</option>
+                <option value="POWERBI">POWER BI</option>
+                <option value="OCTAVE">OCTAVE</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="R">R</option>
+                <option value="EXCEL">EXCEL</option>
+            </select>
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

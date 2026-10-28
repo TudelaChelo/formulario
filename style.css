@@ -1,0 +1,108 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #333333;
+    margin: 0;
+    padding: 30px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #4b5563;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Estilos para mantener el fieldset pero darle un aspecto más limpio y ordenado */
+fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+    padding: 0 6px;
+}
+
+/* Etiquetas de texto */
+label {
+    font-size: 13px;
+    color: #374151;
+}
+
+/* Casillas de llenado (inputs y selects) */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #1f2937;
+    margin-top: 4px;
+}
+
+/* Área de comentarios más cómoda */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 4px;
+}
+
+/* Efecto al hacer clic en las casillas */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+/* Botón de envío similar al verde de la imagen */
+button[type="submit"] {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #059669;
+}
